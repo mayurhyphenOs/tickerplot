@@ -14,9 +14,10 @@ from sqlalchemy import MetaData
 from sqlalchemy.exc import IntegrityError
 
 from sqlalchemy import and_
-
+from sqlalchemy import select
 from tickerplot.bse.bse_utils import BSEGroup
 
+select_expr = select
 and_expr = and_
 
 class CorpActionEnum(enum.Enum):
